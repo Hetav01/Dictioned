@@ -14,7 +14,7 @@ const WordInput = (props) => {
             <form className="ui form" onSubmit={onFormSubmit}>
                 <div className="ui grid container inputBody">
                     <div className="ui transparent input field sixteen wide column">
-                        <input autocomplete="off" placeholder="Enter a word" type="text" name="inputWord" className="inputWord" value={input} onChange={(e) => setInput(e.target.value)}></input>
+                        <input autoComplete="off" placeholder="Enter a word" type="text" name="inputWord" className="inputWord" value={input} onChange={(e) => setInput(e.target.value)}></input>
                     </div>
                 </div>
             </form>

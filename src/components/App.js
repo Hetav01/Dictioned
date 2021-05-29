@@ -3,6 +3,7 @@ import Header from './Header';
 import WordInput from "./WordInput";
 import Dictionary from "../APIs/Dictionary";
 import DisplayData from './DisplayData';
+import Random from "../APIs/Random";
 //import { Container } from "@material-ui/core";
 
 const App = () => {
@@ -11,6 +12,10 @@ const App = () => {
     const [ meanings, setMeanings ] = useState([]);
     const [ phonetics, setPhonetics ] = useState([]);
 
+    const generateRandomWordData = async () => {
+        const response = await Random.get();
+        console.log(response.data);
+    }
 
     const retrieveData = async (word) => {                  //if we are rendering after each input we will use the useEffect hook.
         try {
