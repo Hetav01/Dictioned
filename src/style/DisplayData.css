@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.phonetics {
+    display: flex;
+}
+
+.phoneticText {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    margin-left: 1.5%;
+    margin-right: 2%;
+}
+
+.speakerIcon {
+    font-size: 1.4rem;
+    padding-top: 0.78%;
+}
+
+.gridBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 0 25px;
+    grid-auto-rows: 65px;
+    place-items: center;
+    margin-top: 5%;
+}
+
+.wordMeaningContainer {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 300px;
+    grid-row-end: span 2;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.partOfSpeech {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.meaning {
+    margin-top: 5%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.example {
+    margin-top: 5%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.span {
+    font-weight: bold;
+}

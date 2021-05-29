@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../style/WordInput.css";
 
 const WordInput = (props) => {
     const [input, setInput] = useState("");
@@ -9,14 +10,11 @@ const WordInput = (props) => {
     }
 
     return (
-        <div className="ui container">
+        <div className="ui container wordInput">
             <form className="ui form" onSubmit={onFormSubmit}>
-                <div className="ui grid container">
-                    <div className="field thirteen wide column">
-                        <input placeholder="Enter a word" type="text" name="inputWord" value={input} onChange={(e) => setInput(e.target.value)}></input>
-                    </div>
-                    <div className="three wide column">
-                        <button className="ui positive button" onClick={onFormSubmit}>Submit</button> 
+                <div className="ui grid container inputBody">
+                    <div className="ui transparent input field sixteen wide column">
+                        <input autocomplete="off" placeholder="Enter a word" type="text" name="inputWord" className="inputWord" value={input} onChange={(e) => setInput(e.target.value)}></input>
                     </div>
                 </div>
             </form>
@@ -25,3 +23,7 @@ const WordInput = (props) => {
 };
 
 export default WordInput;
+
+/*<div className="three wide column buttonDiv">
+                        <button className="ui positive button" onClick={onFormSubmit}>Submit</button> 
+                    </div> */

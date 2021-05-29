@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+
+.HeaderContent {
+    display: flex;
+    justify-content: center;
+}
+
+/* @font-face {
+    font-family: ProductSans;
+    src: url("./ProductSans-Regular_7a2a56c145b5d37f87bcdb656af0ddea.ttf");
+} */
+
+.ui.secondary.pointing.menu {}
+
+.ui.secondary.pointing.menu .item {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.headingBody {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 3.6rem;
+}
