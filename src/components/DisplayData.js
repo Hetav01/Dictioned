@@ -2,10 +2,13 @@ import React from 'react';
 import "../style/DisplayData.css";
 
 const DisplayData = ({word, meanings, phonetics}) => {
+    meanings.forEach((item, i) => {
+        item.id = i + 1;
+    });
 
     const renderedMeaningList = meanings.map((mean) => {
         return (
-            <div className="wordMeaningContainer">
+            <div key={mean.id} className="wordMeaningContainer">
                 <div className="partOfSpeech">{mean.partOfSpeech}</div>
                 <div className="meaning">{mean.definitions[0].definition}</div>
                 <div className="example"><span className="span">Example:-</span> {mean.definitions[0].example}</div>
@@ -27,7 +30,7 @@ const DisplayData = ({word, meanings, phonetics}) => {
     if (!word) {
         return (
             <div>
-                <div className="ui active centered inline loader"></div>
+                <div className="ui active centered inline loader loaderInit"></div>
             </div>
         );
     }
