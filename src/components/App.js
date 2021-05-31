@@ -26,12 +26,12 @@ const App = () => {
     const [ wordArray, setWordArray ] = useState([]);
 
     const generateRandomWordArray = async () => {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 6; i++) {
             const response = await Random.get();
             //console.log(response.data[0].word);
             setWordArray(wordArray.push(response.data[0]));
         }
-        console.log(wordArray);
+        //console.log(wordArray);
     }
     
 
