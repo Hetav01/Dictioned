@@ -1,4 +1,4 @@
-#Dictioned📚🧾📑
+### Dictioned📚🧾📑
 
 A simple app created for the sole purpose of increasing my vocab by learning 6 new & weird randomwords every single day.
 
