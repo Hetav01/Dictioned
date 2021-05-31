@@ -4,6 +4,7 @@ A simple app created for the sole purpose of increasing my vocab by learning 6 n
 
 This app was made using the [Dictionary API](https://github.com/meetDeveloper/freeDictionaryAPI) and the [Random Word Generator API](https://github.com/mcnaveen/Random-Words-API).
 
+![alt text](https://github.com/Hetav01/Dictioned/blob/main/Dictioned.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
