@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+#Dictioned📚🧾📑
+
+A simple app created for the sole purpose of increasing my vocab by learning 6 new & weird randomwords every single day.
+
+This app was made using the [Dictionary API](https://github.com/meetDeveloper/freeDictionaryAPI) and the [Random Word Generator API](https://github.com/mcnaveen/Random-Words-API).
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
